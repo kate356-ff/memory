@@ -1,17 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Header } from "./components/header/Header";
-// import { Card } from './components/card/Card';
-import { Footer } from './components/footer/Footer';
-import { Grid } from './components/grid/Grid';
+import { FirstPage } from "./Pages/FirstPage";
+import { GamePage } from "./Pages/GamePage";
+
 
 
 function App() {
   return (
-    <div className="App">
-    <Header />
-    <Grid />
-    <Footer />
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<FirstPage/>} />
+      <Route path="/memory" element={<GamePage/>} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 

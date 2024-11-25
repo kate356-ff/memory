@@ -7,8 +7,6 @@
     align-items: center;
     justify-content: center;
     background-color: lavenderblush;
-    border: solid 1px #333;
-    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.5s;
     transform-style: preserve-3d;
@@ -19,14 +17,14 @@
   }
   
   .card::after {
-    content: attr(data-back);
+    content: "";
     position: absolute;
     inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lemonchiffon;
-    border: solid 1px gray;
+    background-color: rgb(205, 233, 255);
+    border: solid 5px #333;
     border-radius: 10px;
     transform: rotateY(180deg);
     backface-visibility: hidden;
