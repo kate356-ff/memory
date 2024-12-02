@@ -5,6 +5,10 @@ import { useState } from "react";
         const [finishedItems, setFinishedItems] = useState([]);
         const [stepsCount, setStepsCount] = useState(0);
     
+        const random = () => {
+            images. = Math.random() - 0.5;
+        }
+
         const checkItems = (firstItem, secondItem) => {
             const firstImage = images.find(({id}) => id === firstItem);
             const secondImage = images.find(({id}) => id === secondItem);
@@ -18,6 +22,7 @@ import { useState } from "react";
             const handleReset = () => {
                 setFinishedItems([]);
                 setStepsCount(0);
+                random();
             };
     
             const isWin = finishedItems.length > 0 && finishedItems.length === images.length;
