@@ -6,7 +6,7 @@ import { useState } from "react";
         const [stepsCount, setStepsCount] = useState(0);
     
         const random = () => {
-            images. = Math.random() - 0.5;
+            images.push = Math.random() - 0.5;
         }
 
         const checkItems = (firstItem, secondItem) => {
